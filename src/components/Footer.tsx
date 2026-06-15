@@ -1,8 +1,13 @@
+import { version } from "../../package.json";
+
 export default function Footer() {
   return (
     <footer className="border-t border-white/10 bg-neutral-950 px-6 py-8 text-sm text-neutral-400">
       <div className="mx-auto flex max-w-5xl flex-col items-center justify-between gap-4 md:flex-row">
-        <p>© {new Date().getFullYear()} Kevynn Delgado</p>
+        <div className="flex flex-col gap-1 text-center md:text-left">
+          <p>© {new Date().getFullYear()} Kevynn Delgado</p>
+          <p className="text-xs text-neutral-600">v{version}</p>
+        </div>
 
         <div className="flex items-center gap-5">
           <a
