@@ -1,4 +1,5 @@
 import Link from "next/link";
+import TypewriterRoles from "@/components/TypewriterRoles";
 
 const highlights = [
   {
@@ -25,9 +26,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-neutral-950 px-6 pt-36 pb-20 text-white">
       <section className="mx-auto max-w-5xl">
-        <p className="mb-4 text-sm uppercase tracking-[0.2em] text-neutral-400">
-          Professor • Data Scientist • Researcher
-        </p>
+                <TypewriterRoles />
 
         <h1 className="max-w-4xl text-5xl font-bold tracking-tight md:text-7xl">
           Kevynn Delgado
